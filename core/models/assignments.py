@@ -86,6 +86,7 @@ class Assignment(db.Model):
         assignment.grade = grade
 
         assertions.assert_found(assignment, 'No assignment with this id was found')
+        assertions.assert_found(assignment.state == "DRAFT", 'asignment not yet submitted')
         assertions.assert_valid(assignment.teacher_id == principal.teacher_id, 'This assignment belongs to some other teacher')
         assertions.assert_valid(assignment.grade is not None, 'assignment without grade cannot be submitted')
         db.session.flush()

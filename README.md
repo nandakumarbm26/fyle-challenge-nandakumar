@@ -1,4 +1,9 @@
 # Fyle Backend Challenge
+## challenge 1 : GET all assigments of the teacher loggedin
+![outpu1](img2.png "/assignment")
+
+## challenge 2 :  Update grade for the submitted assignments
+![outpu2](img1.png "/assignment/grade")
 
 ## Who is this for?
 
